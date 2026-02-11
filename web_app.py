@@ -256,11 +256,11 @@ with tab2:
     col_a, col_b = st.columns(2)
     
     with col_a:
-        fig_p = px.scatter(df_hist, x='Price', y='Attendance', title="Price Sensitivity Analysis", trendline="ols")
+        fig_p = px.scatter(df_hist, x='Price', y='Attendance', title="Price Sensitivity Analysis")
         st.plotly_chart(fig_p, use_container_width=True)
         
     with col_b:
-        fig_m = px.scatter(df_hist, x='Marketing', y='Attendance', title="Marketing ROI Analysis", trendline="ols")
+        fig_m = px.scatter(df_hist, x='Marketing', y='Attendance', title="Marketing ROI Analysis")
         st.plotly_chart(fig_m, use_container_width=True)
 
 with tab3:
